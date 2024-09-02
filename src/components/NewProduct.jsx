@@ -1,37 +1,49 @@
 import React from 'react';
-import ProductCard from './ProductCard';
+import Image from 'next/image';
+import BioSpray from '/public/android-chrome-512x512.png';
 
 
 
 const NewProduct = () => {
   return (
-    <div>
-      <div className="container pt-16">
-        <h2 className='font-medium text-2xl pb-4'>New Produts</h2>
-      
-
-        <div class="mx-20 mt-40 md:mt-56 mb-10">
-            <div class="grid sm:grid-cols-2">
-                <div class="lg:size-80">
-                    <img src="./images/Images.png" alt="Food"/>
+    <div>      
+        <div class="mx-20 mt-10 md:mt-20 mb-10">
+                <div class="lg:size-80 md:float-left">
+                  <Image src={BioSpray} alt="Bio Spray Plus" width={300} height={300} />
                 </div>
-                <div class="text-left ml-4 text-[#000000] tracking-[0.3]">
-                    <h1 class="font-semibold text-[18px] sm:text-[32px]">
-                        Take a taste, come join us. Life is so endlessly delicious
+                <div class="text-left ml-2 lg:mr-14 text-[#000000] tracking-[0.3]">
+                    <h1 class="font-semibold text-center text-[18px] sm:text-[32px]">
+                      Bio Spray Plus কি?
                     </h1>
                     <p class="my-5 text-[14px] sm:text-[18px]">
-                        In the artist's own experience, of course, art is fundamentally indefinable, unsayable; there is something sacred about its demands upon the soul, something inherently mysterious in the forms it takes
-                    </p>
-                    <button class="bg-[#FF006E] mt-2 px-3 py-2 font-semibold hover:bg-slate-700 text-white rounded-3xl">Download our App</button>
+                      বায়ো স্প্রে প্লাস আসলে একটা ডায়াটারী ফুড সাপ্লিমেন্ট। যা মানব দেহের কোষ বিভাজনে সহায়তা করে ।<br />
+
+                        ১) বায়ো স্প্রে প্লাস এর প্রধান কাজ হচ্ছে হিউম্যান গ্রোথ হরমোন ডেভেলপ করা। সাধারণত বয়স ২৫ এর আগে 
+                           আমাদের শরীরে প্রচুর পরিমাণ হিউম্যান গ্রোথ হরমোন উৎপাদিত হয় কিন্তু বয়স ২৫ এর পর থেকে প্রতি বছর 
+                           ১.৪% মানে প্রতি ১০ বছর ১৪% করে কমে যেতে থাকে। যার ফলে আমরা ধীরে ধীরে বৃদ্ধ হওয়ার দিকে ধাবিত 
+                           হতে থাকি। কিন্তু বায়ো স্প্রে প্লাস হিউম্যান গ্রোথ হরমোন ডেভেলপ করে বৃদ্ধ হওয়ার প্রক্রিয়াকে দেরী করাতে পারে।<br /><br />
+
+                        ২) বায়ো স্প্রে প্লাস এ রয়েছে ৪৮ প্রকার উপাদান এবং কোলস্ট্রাম লিকুইড। ৪৮ প্রকার উপাদান এর মধ্যে রয়েছে তিন 
+                           প্রকার এন্টিবডি। যেমনঃ IgA, IgM, IgG. যা রোগ প্রতিরোধ ক্ষমতা বৃদ্ধি করে। অর্থাৎ, বায়ো স্প্রে প্লাস ব্যবহারে রোগ 
+                           প্রতিরোধ ক্ষমতা বৃদ্ধি পায় যার ফলে প্রতিটি রোগ থেকে সুস্থতায় বায়ো স্প্রে প্লাস কার্যকরী ভূমিকা পালন করে।<br /><br />
+
+                        ৩) বায়ো স্প্রে প্লাস ব্যবহারে হরমোনাল সমস্যা সমাধান করে। বিশেষ করে নিচের ৯ টি হরমোন ইমব্যালেন্স হলে এগুলো ব্যালেন্স করে।<br />
+                        * এইচ জি এইচ<br />
+                        * মেলাটোনিন<br />
+                        * থায়রয়েড<br />
+                        * ইনসুলিন<br />
+                        * ডি এইচ ই এ<br />
+                        * এস্ট্রোজেন<br />
+                        * প্রজেস্টোরন<br />
+                        * টেস্টোস্ট্রেরন<br />
+                        * নাইট্রিক অক্সাইড<br />
+                        এই সমস্থ হরমোনাল ইমব্যালেন্স এর কারণে যে সমস্ত রোগ হয়ে থাকে এরকম প্রতিটি রোগের জন্য বায়ো স্প্রে প্লাস ব্যবহার করা হয় 
+                        এবং ধীরে ধীরে রোগ মুক্তি করে।
+                    </p>                   
                 </div>
-            </div>
-        </div>
-
-
-     
-     
         </div>
       </div>
+  
  
   )
 }
