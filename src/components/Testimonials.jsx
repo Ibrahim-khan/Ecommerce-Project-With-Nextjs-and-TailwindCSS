@@ -16,7 +16,7 @@ const Testimonials = () => {
                         alt="dp"
                     />
                     <h2 className='text-gray-500 font-black text-[20px]'>Ibrahim Khan</h2>
-                    <p>CEO & Founder</p>
+                    <p>Ambassador</p>
                     <Image
                     className='inline-block py-2'
                     src="/picture1.jpg"
