@@ -25,7 +25,7 @@ const Testimonials = () => {
                     alt="quotes"
                     />
                     <p className='max-w-[200px] text-gray-500'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, facilis!
+                        অরিজিনাল বায়ো স্প্রে প্লাস কিনতে সরাসরি অফিসে যোগাযোগ করুন। অনলাইনে পণ্য কিনে প্রতারিত হবেন না। বিস্তারিতঃ 01742 095 986
                     </p>
                 </div>
             </div>
