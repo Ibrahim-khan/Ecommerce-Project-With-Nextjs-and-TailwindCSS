@@ -4,7 +4,6 @@ import Image from 'next/image'
 const Testimonials = () => {
   return (
     <div className='container pt-16 pb-16 grid-cols-2'>
-      <h2 className='font-medium text-2xl pb-4'>Testimonials</h2>
         <div className='grid lg:grid-cols-[300px,1fr] gap-4'>
             <div className='border border-gray-300 rounded-2xl grid place-items-center p-6 lg:p-0'>
                 <div className='text-center flex flex-col items-center gap-1'>
@@ -25,25 +24,13 @@ const Testimonials = () => {
                     alt="quotes"
                     />
                     <p className='max-w-[200px] text-gray-500'>
-                        অরিজিনাল বায়ো স্প্রে প্লাস কিনতে সরাসরি অফিসে যোগাযোগ করুন। অনলাইনে পণ্য কিনে প্রতারিত হবেন না। বিস্তারিতঃ 01742 095 986
+                        বায়ো স্প্রে প্লাস সম্পর্কে যেকোনো তথ্য পেতে যোগাযোগ করুনঃ 01742 095 986
                     </p>
                 </div>
             </div>
-
-            <div className='bg-red-600 bg-[url(/coverphoto.png)] bg-cover h-[500px] rounded-2xl grid place-items-center'>
-                <div className='bg-[#ffffffab] min-w-[270px] sm:min-w-[300px] md:min-w-[500px] rounded-xl py-8 sm:px-8 px-2 grid place-items-center gap-3'>
-                    <button className='bg-blackish text-white p-2 rounded-md'>
-                        25% DISCOUNT
-                    </button>
-                    <h2 className='font-extrabold text-2xl text-[#272727]'>
-                        Summer Collection
-                    </h2>
-                    <p className='text-gray-500 text-[20px]'>
-                        Starting @ $20 <b>Shop Now</b>
-                    </p>
+                <div className='ml-10'>
+                    <iframe className='h-[500px] rounded-2xl grid place-items-center w-full' src="https://www.youtube.com/embed/ovmdHhi1dMA" title="বায়ো স্প্রে প্লাস কোন কোন রোগের জন্য কাজ করে। Bio Spray Plus ।" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen/>
                 </div>
-            </div>
-            
         </div>
     </div>
   )
