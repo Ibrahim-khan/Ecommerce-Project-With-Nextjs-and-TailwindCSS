@@ -18,24 +18,15 @@ const Hero = () => {
     const slideData = [
         {
             id: 0,
-            img: "/coverphoto.png",
-            title: "Bio Spray Plus",
-            mainTitle: "Bio Spray Plus",
-            price: "$20",
+            img: "/coverphoto.png",            
         },
         {
             id: 1,
-            img: "/coverphoto1.png",
-            title: "Bio Spray Plus",
-            mainTitle: "Bio Spray Plus",
-            price: "$15", 
+            img: "/coverphoto1.png",            
         },
         {
             id: 2,
-            img: "/coverphoto2.png",
-            title: "Bio Spray Plus",
-            mainTitle: "Bio Spray Plus",
-            price: "$30",  
+            img: "/coverphoto2.png",           
         },
     ];
 
@@ -47,10 +38,7 @@ const Hero = () => {
             slideData.map((item) => (
               <Slide
                 key={item.id}
-                img={item.img}
-                title={item.title}
-                mainTitle={item.mainTitle}
-                price={item.price}
+                img={item.img}                
               />
             ))}
         </Slider>
