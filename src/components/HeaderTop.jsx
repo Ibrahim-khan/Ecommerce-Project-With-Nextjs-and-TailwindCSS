@@ -4,7 +4,7 @@ import { FaFacebook, FaYoutube, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const HeaderTop = () => {
   return (
-    <div className="border-b border-gray-200 hidden sm:block">
+    <div className="border-b border-gray-200">
       <div className="container py-4">
         <div className="flex justify-between items-center">
           <div className="hidden lg:flex gap-1">
@@ -27,17 +27,17 @@ const HeaderTop = () => {
           </div>
 
           <div className="text-gray-500 text-[12px]">
-            <b>নোটিশ:</b> প্রতি শুক্রবার "বায়ো স্প্রে প্লাস" এর অফিসে ফ্রি সেমিনার এর আয়োজন করা হয় (সময়ঃ সকাল ১০:০০ থেকে দুপুর ১২:৩০)। বায়ো স্প্রে প্লাস সম্পর্কে বিস্তারিত জানতে সেমিনারে আপনি আমন্ত্রিত।
+            <b>নোটিশ:</b> প্রতি শুক্রবার "বায়ো স্প্রে প্লাস" এর অফিসে ফ্রি সেমিনার এর আয়োজন করা হয় (সকাল ১০:০০ থেকে দুপুর ১২:৩০)। বায়ো স্প্রে প্লাস সম্পর্কে বিস্তারিত জানতে সেমিনারে আপনি আমন্ত্রিত।
           </div>
 
-          <div className="flex gap-4">
+          <div className="hidden lg:flex gap-4">
             <select
               className="text-gray-500 text-[12px] w-[80px]"
               name="language"
               id="language"
             >
-              <option value="English">English</option>
               <option value="Bangla">Bangla</option>
+              <option value="English">English</option>
             </select>
           </div>
           
