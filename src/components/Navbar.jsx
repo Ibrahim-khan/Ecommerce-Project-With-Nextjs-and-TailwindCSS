@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from "next/link";
 
 const Navbar = () => {
+
+    const [isClick, setisClick] = useState(false);
+    const toggleNavbar = () => {
+        setisClick(!isClick)
+    }
 
   return (
     <div className='hidden md:block'>
