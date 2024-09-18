@@ -7,15 +7,15 @@ import BioSpray from '/public/android-chrome-512x512.png';
 const NewProduct = () => {
   return (
     <div>      
-        <div class="mx-20 mt-10 md:mt-20 mb-10">
-                <div class="lg:size-80 md:float-left">
+        <div class="px-2 sm:px-10 md:px-20 w-full mt-10 md:mt-20 mb-10">
+                <div class="lg:size-80 sm:float-left">
                   <Image src={BioSpray} alt="Bio Spray Plus" width={300} height={300} />
                 </div>
                 <div class="text-left ml-2 lg:mr-14 text-[#000000] tracking-[0.3]">
                     <h1 class="font-semibold text-center text-[18px] sm:text-[32px]">
                       Bio Spray Plus কি?
                     </h1>
-                    <p class="my-5 text-[14px] sm:text-[16px]">
+                    <p class="my-5 text-[14px] sm:text-[18px]">
                       বায়ো স্প্রে প্লাস আসলে একটা ডায়াটারী ফুড সাপ্লিমেন্ট। যা মানব দেহের কোষ বিভাজনে সহায়তা করে ।<br />
 
                         ১) বায়ো স্প্রে প্লাস এর প্রধান কাজ হচ্ছে হিউম্যান গ্রোথ হরমোন ডেভেলপ করা। সাধারণত বয়স ২৫ এর আগে 
