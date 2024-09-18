@@ -15,7 +15,7 @@ const NewProduct = () => {
                     <h1 class="font-semibold text-center text-[18px] sm:text-[32px]">
                       Bio Spray Plus কি?
                     </h1>
-                    <p class="my-5 text-[14px] sm:text-[18px]">
+                    <p class="my-5 text-[14px] sm:text-[16px]">
                       বায়ো স্প্রে প্লাস আসলে একটা ডায়াটারী ফুড সাপ্লিমেন্ট। যা মানব দেহের কোষ বিভাজনে সহায়তা করে ।<br />
 
                         ১) বায়ো স্প্রে প্লাস এর প্রধান কাজ হচ্ছে হিউম্যান গ্রোথ হরমোন ডেভেলপ করা। সাধারণত বয়স ২৫ এর আগে 
