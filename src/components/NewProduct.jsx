@@ -8,11 +8,11 @@ const NewProduct = () => {
   return (
     <div>      
         <div class="px-2 sm:px-10 md:px-20 w-full mt-10 md:mt-20 mb-10">
-                <div class="lg:size-80 sm:float-left">
+                <div class="lg:size-80 grid place-items-center justify-center sm:float-left">
                   <Image src={BioSpray} alt="Bio Spray Plus" width={300} height={300} />
                 </div>
                 <div class="text-left ml-2 lg:mr-14 text-[#000000] tracking-[0.3]">
-                    <h1 class="font-semibold text-center text-[18px] sm:text-[32px]">
+                    <h1 class="font-semibold mt-5 text-center text-[18px] sm:text-[32px]">
                       Bio Spray Plus কি?
                     </h1>
                     <p class="my-5 text-[14px] sm:text-[18px]">
