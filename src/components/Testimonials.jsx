@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Testimonials = () => {
   return (
-    <div className='container pt-16 pb-16 grid-cols-2'>
+    <div className='container py-16 grid-cols-2'>
         <div className='grid md:grid-cols-[300px,1fr] gap-4'>
             <div className='border border-gray-300 rounded-2xl grid place-items-center p-6 lg:p-0'>
                 <div className='text-center flex flex-col items-center gap-1'>
