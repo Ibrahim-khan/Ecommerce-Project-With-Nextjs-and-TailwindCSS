@@ -5,8 +5,8 @@ const Certificate_Gallery = () => {
   return (
     <div className='w-full h-auto bg-gray-100'>
       <h1>Certificate & Gallery</h1>
-      <div className='container py-16 grid-cols-2'>
-        <div className="grid md:grid-cols-[300px,1fr]">
+      <div className='py-16'>
+        <div className="grid md:grid-cols-2">
           
           <div className="w-full space-y-5">
             <div className="flex space-x-5 justify-center">
