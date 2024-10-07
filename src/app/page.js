@@ -1,17 +1,18 @@
-import Certificate_Gallery from "@/components/Certificate_Gallery";
 import Hero from "@/components/Hero";
-import NewProduct from "@/components/NewProduct";
-import Testimonials from "@/components/Testimonials";
-import Testimony_Picture from "@/components/Testimony_Picture";
+import WhyMcq from "@/components/whyMcq";
+import UpcomingExams from "@/components/UpcomingExams";
+import Review from "@/components/Review";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import '../app/globals.css'; 
 
 export default function Home() {
   return (
     <main>
        <Hero />
-       <NewProduct />
-       <Testimonials/>
-       <Certificate_Gallery/>
-       <Testimony_Picture />
+       <WhyMcq />
+       <UpcomingExams />
+       <Review />
     </main>
   );
 }

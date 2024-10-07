@@ -3,28 +3,32 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <div className='bg-blackish text-gray-400 text-center py-5'>
-
-							
-        <div className="container">
-          <div className="flex w-full grid-cols-1 sm:grid-cols-3 space-x-10">
-            <div className='text-center'>
+      <div className='w-full bg-blackish mt-20 py-5'>						
+        <div className=" text-gray-400">
+          <div className="grid space-y-5 md:grid-cols-3 pl-5">
+            
+            {/* Address start */}
+            <div className='text-left sm:text-center text-[12px] sm:text-[14px]'>
               <p><b>Address:</b><br/>
-                <i>Shadhin Online Public Ltd.<br/>
-                Ayesha Shopping Complex,<br/>
-                85, Siddeshwari road,<br/>
+                <i>Neuron Academy<br/>
+                6th floor, Fortune Shopping Mall, <br/>
                 Dhaka-1217.</i></p>
             </div>
-            <div className='text-center'>
+            {/* Address end */}
+
+            {/* Contact start */}
+            <div className='text-left sm:text-center text-[12px] sm:text-[14px]'>
               <p><b>Contact:</b><br/>
                 Email: <i>ibrahim2013khan@gmail.com</i><br/>
                 Phone: 01742 095 986.<br/>
-                What is app & Imo Connect: +880 1742 095 986</p>
+              </p>
             </div>
+            {/* Contact end */}
 
-            <div className='flex space-x-5'>
-
-                <a href="https://www.facebook.com/BioSpray.Official.page" target="_blank">
+            {/* Logo start */}
+            {/* Facebook */}
+            <div className='flex space-x-5 sm:place-items-center sm:justify-center'>   
+              <a href="https://www.facebook.com/neuronacademy0" target="_blank">
                 <Image 
                   className='header_top__icon_wrapper'
                   src="/logo/fb.png" 
@@ -32,9 +36,10 @@ const Footer = () => {
                   width={30} 
                   height={30}
                 />
-                </a>
-                
-                <a href="https://www.youtube.com/@BioSprayPlusColostrumLiquid/featured" target="_blank">
+              </a>
+
+                {/* Youtube */}
+              <a href="https://www.youtube.com/@BioSprayPlusColostrumLiquid/featured" target="_blank">
                 <Image 
                   className='header_top__icon_wrapper'
                   src="/logo/youtube.png" 
@@ -42,9 +47,10 @@ const Footer = () => {
                   width={30}
                   height={30}
                 />
-                </a>
+              </a>
                 
-                <a href="/">
+                {/* Linkedin */}
+              <a href="/">
                 <Image 
                   className='header_top__icon_wrapper'
                   src="/logo/linkedin.png" 
@@ -52,26 +58,14 @@ const Footer = () => {
                   width={30}
                   height={30}
                 />
-                </a>
-                
-                <a href="http://www.abnutric.com/Web/products/ListOfProducts-bio.asp" target="_blank">
-                <Image 
-                  className='header_top__icon_wrapper'
-                  src="/logo/nutric.png" 
-                  alt="Nutric" 
-                  width={90}
-                  height={90}
-                />
-                </a>
+              </a>
             </div>
-          </div>
-        </div>
+            {/* Logo End */}
 
-        <div className='bg-blackish text-gray-500 text-center py-4 pb-16 md:pb-4'>
-          Copyright @ Logo <br/>All Rights Reserved 2024.
-        </div>
-    </div>
+          </div>
+        </div>       
+      </div>
   )
 }
 
-export default Footer
+export default Footer;
