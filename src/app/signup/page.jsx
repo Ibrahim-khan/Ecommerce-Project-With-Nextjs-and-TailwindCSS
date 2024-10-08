@@ -3,22 +3,36 @@
 import { useState } from 'react';
 
 export default function SignupForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    password: '',
-  });
+
+  const [username, setUsername] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+
+    const response = await fetch('http://localhost:5000/api/signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username, phone, email, password }),
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      setMessage('User registered successfully');
+    } else {
+      setMessage(data.error || 'Failed to register user');
+    }
   };
 
   return (
@@ -26,7 +40,7 @@ export default function SignupForm() {
       <form 
         onSubmit={handleSubmit}
         className="bg-white p-6 rounded-lg shadow-md w-full max-w-md"
-        action="signupsuccess.php" method="post"
+        action="" method="post"
       >
         <h2 className="text-2xl font-bold mb-6 text-center">সাইন আপ</h2>
 
@@ -39,8 +53,8 @@ export default function SignupForm() {
             type="text"
             id="name"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
             required
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             placeholder="আপনার নাম লিখুন"
@@ -56,8 +70,8 @@ export default function SignupForm() {
             type="number"
             id="phone"
             name="phone"
-            value={formData.phone}
-            onChange={handleChange}
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
             required
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             placeholder="ফোন নাম্বার দিন"
@@ -73,8 +87,8 @@ export default function SignupForm() {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             placeholder="আপনার ইমেইল দিন"
@@ -90,8 +104,8 @@ export default function SignupForm() {
             type="password"
             id="password"
             name="password"
-            value={formData.password}
-            onChange={handleChange}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             placeholder="পাসওয়ার্ড দিন"
@@ -106,6 +120,7 @@ export default function SignupForm() {
           সাইন আপ
         </button>
       </form>
+      
     </div>
   );
-}
+};

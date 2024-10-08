@@ -21,7 +21,7 @@ const Navbar = () => {
                     src="/logo.jpg"
                     width={50}
                     height={50}
-                    alt="logo"
+                    alt="logon"
                     />
                 </div>
                 <Link className='navbar__link relative' href='/'>
